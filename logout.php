@@ -17,6 +17,7 @@
 
       // Subscribe the recipient to the server
       $expo->unsubscribe($username);
+      echo(json_encode('$_POST'));
     }else{
       echo('tsis inin le POST ah');
     }
