@@ -1,9 +1,10 @@
   <?php
     header("Access-Control-Allow-Origin: *");
 
-    include_once '/initUser.php';
-    $rest = new initUser();
-    $rest->goInit();
+    var_dump('eto aza n ol tzitra kou');
+    // include_once '/initUser.php';
+    // $rest = new initUser();
+    // $rest->goInit();
   //   // You can quickly bootup an expo instance
   //     $expo = \ExponentPhpSDK\Expo::normalSetup();
 
