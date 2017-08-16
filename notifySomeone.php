@@ -10,8 +10,8 @@
             $notification = ['body' => $message];
             $name=trim($name);
             $expo->notify($name, $notification);
-        }catch($exception){
-            var_dump($exception)
+        } catch(Exception $e){
+            var_dump($e)
         }
     }
 
