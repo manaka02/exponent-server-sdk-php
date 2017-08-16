@@ -1,18 +1,9 @@
   <?php
     header("Access-Control-Allow-Origin: *");
-    var_dump($_POST);
-    echo "eo ara oe";
-  // header("Access-Control-Allow-Origin: *");
-    require_once __DIR__.'/vendor/autoload.php';
-    include_once '/SimpleRestHTTP.php';
-    $statusCode = 200;
-    $response = $_POST;
 
-    $requestContentType = $_SERVER['HTTP_ACCEPT'];
-    $this ->setHttpHeaders($requestContentType, $statusCode);
-
-    $response = $this->encodeJson($response);
-    echo($response)
+    include_once '/initUser.php';
+    $rest = new initUser();
+    $rest->goInit($_POST['username'], $_POST['token']);
   //   // You can quickly bootup an expo instance
   //     $expo = \ExponentPhpSDK\Expo::normalSetup();
 
