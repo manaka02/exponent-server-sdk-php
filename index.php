@@ -1,16 +1,31 @@
-  <?php
-  require_once __DIR__.'/vendor/autoload.php';
-  
-    $interestDetails = ['toavina', 'ExponentPushToken[5AQ172ILixXkR3_9oM9uTh]'];
-    
-    // You can quickly bootup an expo instance
-    $expo = \ExponentPhpSDK\Expo::normalSetup();
-    
-    // Subscribe the recipient to the server
-    $expo->subscribe($interestDetails[0], $interestDetails[1]);
-    
-    // Build the notification data
-    $notification = ['body' => 'Eo ara oe!'];
-    
-    // Notify an interest with a notification
-    $expo->notify($interestDetails[0], $notification);
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Send notification</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Send notification to someone</h2>
+  <form action="/notifySomeone.php" method = "POST">
+    <div class="form-group">
+      <label for="email">Nom de la personne:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Message:</label>
+        <input type="text" class="form-control" id="<mess>ge</mess>" placeholder="Enter password" name="message" required>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
