@@ -3,8 +3,8 @@
     var_dump($_POST);
     echo "eo ara oe";
   // header("Access-Control-Allow-Origin: *");
-  // require_once __DIR__.'/vendor/autoload.php';
-  // require_once '/SimpleRestHTTP.php';
+  require_once __DIR__.'/vendor/autoload.php';
+  include_once '/SimpleRestHTTP.php';
   //   // You can quickly bootup an expo instance
   //     $expo = \ExponentPhpSDK\Expo::normalSetup();
 
@@ -21,13 +21,13 @@
   //     // // Notify an interest with a notification
   //     // $expo->notify($interest, $notification);
 
-  //       $statusCode = 200;
-  //       $response = array('test'=>'123ze');
+        $statusCode = 200;
+        $response = $_POST;
 
-  //       $requestContentType = $_SERVER['HTTP_ACCEPT'];
-  //       $this ->setHttpHeaders($requestContentType, $statusCode);
+        $requestContentType = $_SERVER['HTTP_ACCEPT'];
+        $this ->setHttpHeaders($requestContentType, $statusCode);
 
-  //       $response = $this->encodeJson($response);
+        $response = $this->encodeJson($response);
         
 
     
