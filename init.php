@@ -1,5 +1,7 @@
   <?php
-    var_dump($_POST)
+    header("Access-Control-Allow-Origin: *");
+    var_dump($_POST);
+    echo "eo ara oe";
   // header("Access-Control-Allow-Origin: *");
   // require_once __DIR__.'/vendor/autoload.php';
   // require_once '/SimpleRestHTTP.php';
@@ -26,6 +28,6 @@
   //       $this ->setHttpHeaders($requestContentType, $statusCode);
 
   //       $response = $this->encodeJson($response);
-        echo "eo ara oe";
+        
 
     
