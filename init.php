@@ -3,7 +3,7 @@
 
     var_dump('eto aza n ol tzitra kou');
      include_once 'initUser.php';
-      $rest = new initUser();
+      $rest = new InitUser();
     // include_once '/initUser.php';
     // $rest = new initUser();
     // $rest->goInit();
