@@ -2,7 +2,7 @@
     header("Access-Control-Allow-Origin: *");
 
     var_dump('eto aza n ol tzitra kou');
-     include_once '/initUser.php';
+     include_once 'initUser.php';
       $rest = new initUser();
     // include_once '/initUser.php';
     // $rest = new initUser();
