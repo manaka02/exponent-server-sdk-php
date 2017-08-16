@@ -2,21 +2,21 @@
     header("Access-Control-Allow-Origin: *");
 
      
+    require_once __DIR__.'/vendor/autoload.php';
+  
+    $interestDetails = ['toavina', 'ExponentPushToken[5AQ172ILixXkR3_9oM9uTh]'];
+    
     // You can quickly bootup an expo instance
-      $expo = \ExponentPhpSDK\Expo::normalSetup();
-
-      
-      $interest = (isset($_POST['username'])) ? $_POST['username'] : "toavina";
-      $token = (isset($_POST['token'])) ? $_POST['token'] : "ExponentPushToken[5AQ172ILixXkR3_9oM9uTh";
-      $interestDetails = [$interest, $token];      
-      $expo->subscribe($interest, $token);
-      $message = "Bienvenue sur l'application AriaryPro ".$interest." \n 
-                une notification vous sera envoyée à chaque reception d'argent";
-      // Build the notification data
-      $notification = ['body' => $message];
-      
-      // Notify an interest with a notification
-      $expo->notify($interest, $notification);
+    $expo = \ExponentPhpSDK\Expo::normalSetup();
+    
+    // Subscribe the recipient to the server
+    $expo->subscribe($interestDetails[0], $interestDetails[1]);
+    
+    // Build the notification data
+    $notification = ['body' => 'Hello World!'];
+    
+    // Notify an interest with a notification
+    $expo->notify($interestDetails[0], $notification);
 
         
         
