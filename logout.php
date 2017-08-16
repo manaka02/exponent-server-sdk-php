@@ -7,15 +7,16 @@
       // You can quickly bootup an expo instance
       $expo = \ExponentPhpSDK\Expo::normalSetup();
       
-      // Subscribe the recipient to the server
-      $expo->unsubscribe($username);
+      
       $message = 'Bonjour '.$interestDetails[0]." ce mobile n'est plus synchronisé avec votre compte et ne recevra plus de notification";
       // Build the notification data
       $notification = ['body' => $message];
       
       // Notify an interest with a notification
       $expo->notify($interestDetails[0], $notification);
-      echo json_encode($_POST);
+
+      // Subscribe the recipient to the server
+      $expo->unsubscribe($username);
     }else{
       echo('tsis inin le POST ah');
     }
