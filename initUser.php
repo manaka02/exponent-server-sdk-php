@@ -7,6 +7,7 @@
  * Time: 21:53
  */
 header("Access-Control-Allow-Origin: *");
+include_once 'SimpleRestHTTP.php';
 class InitUser{
 
     // public function goInit(){
