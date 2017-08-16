@@ -14,14 +14,14 @@
 
 <div class="container">
   <h2>Send notification to someone</h2>
-  <form action="/init.php" method = "POST">
+  <form action="/notifySomeone.php" method = "POST">
     <div class="form-group">
       <label for="email">Nom de la personne:</label>
       <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
     </div>
     <div class="form-group">
       <label for="pwd">Message:</label>
-        <textarea class="form-control" id="<mess>ge</mess>" name="token" required></textarea>
+        <textarea class="form-control" id="<mess>ge</mess>" name="message" required></textarea>
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>

@@ -9,7 +9,7 @@
       
       // Subscribe the recipient to the server
       $expo->subscribe($interestDetails[0], $interestDetails[1]);
-      $message = 'Bonjour '.$interestDetails[0]." on vous enverra désormais une notification sur ce mobile à chaque récéption d'argent";
+      $message = 'Bonjour '.$interestDetails[0]."\n on vous enverra désormais \n une notification sur ce mobile \n à chaque récéption d'argent";
       // Build the notification data
       $notification = ['body' => $message];
       
