@@ -2,7 +2,7 @@
     if(isset($_POST)){
         require_once __DIR__.'/vendor/autoload.php';
         // You can quickly bootup an expo instance
-        var_dump($_POST);
+        var_dump($_POST['username']);
         try{
             $expo = \ExponentPhpSDK\Expo::normalSetup();
             $name = $_POST['username'];
