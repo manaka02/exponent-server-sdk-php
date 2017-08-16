@@ -5,16 +5,12 @@
         try{
             $expo = \ExponentPhpSDK\Expo::normalSetup();
             $name = $_POST['username'];
-            $listName = ['toavina', 'hasina'];
-            $listToken = $expo->getMembers($listName);
-            var_dump('fanavaozan'.$listToken);
-            // $message = $_POST['message'];
-            // // $interestDetails = ['toavina', 'ExponentPushToken[5AQ172ILixXkR3_9oM9uTh]'];
-            // // $expo->unsubscribe('toavina');
-            // // $expo->subscribe($interestDetails[0], $interestDetails[1]);
-            // $notification = ['body' => $message];
-            // $expo->notify($name, $notification);
+            $message = $_POST['message'];
+            
+            $notification = ['body' => $message];
+            $expo->notify($name, $notification);
         } catch(Exception $e){
+            echo "la nom que vous avez mentionné n'existe pas encore dans le registre";
             var_dump($e);
         }
     }
