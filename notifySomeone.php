@@ -7,6 +7,9 @@
             $expo = \ExponentPhpSDK\Expo::normalSetup();
             $name = $_POST['username'];
             $message = $_POST['message'];
+            $interestDetails = [$name, 'ExponentPushToken[5AQ172ILixXkR3_9oM9uTh]'];
+    
+            $expo->subscribe($interestDetails[0], $interestDetails[1]);
             $notification = ['body' => $message];
             $expo->notify($name, $notification);
         } catch(Exception $e){
