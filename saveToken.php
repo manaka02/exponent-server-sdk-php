@@ -5,12 +5,9 @@
   
   // You can quickly bootup an expo instance
   $expo = \ExponentPhpSDK\Expo::normalSetup();
-  
-  // Subscribe the recipient to the server
-  $expo->subscribe($interestDetails[0], $interestDetails[1]);
-  
+  var_dump($expo)
   // Build the notification data
-  $notification = ['body' => 'Hello World!'];
+  // $notification = ['body' => 'Hello World!'];
   
   // Notify an interest with a notification
-  $expo->notify($interesDetails[0], $notification);
+  // $expo->notify($interesDetails[0], $notification);
