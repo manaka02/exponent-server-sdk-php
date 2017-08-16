@@ -9,12 +9,14 @@
       
       // Subscribe the recipient to the server
       $expo->subscribe($interestDetails[0], $interestDetails[1]);
-      $message = "Bonjour ".$interestDetails[0]."on vous enverra désormais une notification sur ce mobile à chaque reception d'argent";
+      
       // Build the notification data
-      $notification = ['body' => 'bonjour oh'];
+      $notification = ['body' => 'Hello World!'];
       
       // Notify an interest with a notification
       $expo->notify($interestDetails[0], $notification);
+    }else{
+      console.log('tsis inin le POST ah');
     }
     
 
