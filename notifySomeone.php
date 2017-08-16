@@ -6,12 +6,13 @@
         try{
             $expo = \ExponentPhpSDK\Expo::normalSetup();
             $name = $_POST['username'];
-            $message = $_POST['message'];
-            // $interestDetails = ['toavina', 'ExponentPushToken[5AQ172ILixXkR3_9oM9uTh]'];
-            // $expo->unsubscribe('toavina');
-            // $expo->subscribe($interestDetails[0], $interestDetails[1]);
-            $notification = ['body' => $message];
-            $expo->notify($name, $notification);
+            $expo->getMember($name);
+            // $message = $_POST['message'];
+            // // $interestDetails = ['toavina', 'ExponentPushToken[5AQ172ILixXkR3_9oM9uTh]'];
+            // // $expo->unsubscribe('toavina');
+            // // $expo->subscribe($interestDetails[0], $interestDetails[1]);
+            // $notification = ['body' => $message];
+            // $expo->notify($name, $notification);
         } catch(Exception $e){
             var_dump($e);
         }

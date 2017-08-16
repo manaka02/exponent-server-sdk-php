@@ -60,6 +60,12 @@ class Expo
         return $this->registrar->registerInterest($interest, $token);
     }
 
+
+    public function getMember($interest){
+        $user = $this->registrar->getInterests($interests);
+        var_dump('$user');
+    }
+
     /**
      * Unsubscribes a given interest from the Expo Push Notifications.
      *
