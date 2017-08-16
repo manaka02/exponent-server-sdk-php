@@ -6,7 +6,8 @@
         try{
             $expo = \ExponentPhpSDK\Expo::normalSetup();
             $name = $_POST['username'];
-            $expo->getMember($name);
+            $test = $expo->getMember($name);
+            echo $test.'eto oooooh';
             // $message = $_POST['message'];
             // // $interestDetails = ['toavina', 'ExponentPushToken[5AQ172ILixXkR3_9oM9uTh]'];
             // // $expo->unsubscribe('toavina');

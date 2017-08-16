@@ -62,8 +62,7 @@ class Expo
 
 
     public function getMember($interest){
-        $user = $this->registrar->getInterests($interests);
-        var_dump('$user');
+        return  $this->registrar->getInterests($interests);
     }
 
     /**
