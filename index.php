@@ -21,7 +21,7 @@
     </div>
     <div class="form-group">
       <label for="pwd">Message:</label>
-        <input type="text" class="form-control" id="<mess>ge</mess>" placeholder="Enter password" name="message" required>
+        <textarea class="form-control" id="<mess>ge</mess>" name="message" required></textarea>
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
