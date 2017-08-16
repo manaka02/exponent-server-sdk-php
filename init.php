@@ -17,7 +17,7 @@
       // Notify an interest with a notification
       $expo->notify($interestDetails[0], $notification);
     }else{
-      console.log('tsis inin le POST ah')
+      console.log('tsis inin le POST ah');
     }
     
 
