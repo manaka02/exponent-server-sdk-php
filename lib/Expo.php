@@ -61,7 +61,7 @@ class Expo
     }
 
 
-    public function getMember($interest){
+    public function getMembers($interests){
         return  $this->registrar->getInterests($interests);
     }
 
