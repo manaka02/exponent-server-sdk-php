@@ -7,18 +7,17 @@
  * Time: 21:53
  */
 header("Access-Control-Allow-Origin: *");
-include_once 'SimpleRestHTTP.php';
-class InitUser extends SimpleRestHTTP {
+class InitUser{
 
-    public function goInit(){
+    // public function goInit(){
         
-        $statusCode = 200;
-        $response = array('accountId'=>'azzresx');
+    //     $statusCode = 200;
+    //     $response = array('accountId'=>'azzresx');
 
-        $requestContentType = $_SERVER['HTTP_ACCEPT'];
-        $this ->setHttpHeaders($requestContentType, $statusCode);
+    //     $requestContentType = $_SERVER['HTTP_ACCEPT'];
+    //     $this ->setHttpHeaders($requestContentType, $statusCode);
 
-        $response = $this->encodeJson($response);
-        echo $response;
-    }
+    //     $response = $this->encodeJson($response);
+    //     echo $response;
+    // }
 }
