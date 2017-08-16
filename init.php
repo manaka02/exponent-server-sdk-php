@@ -8,14 +8,18 @@
       $expo = \ExponentPhpSDK\Expo::normalSetup();
       
       // Subscribe the recipient to the server
-      $expo->subscribe($interestDetails[0], $interestDetails[1]);
-      $message = 'Bonjour '.$interestDetails[0]."\n on vous enverra désormais \n une notification sur ce mobile \n à chaque récéption d'argent";
-      // Build the notification data
-      $notification = ['body' => $message];
-      
-      // Notify an interest with a notification
-      $expo->notify($interestDetails[0], $notification);
-      echo json_encode($_POST);
+      try{
+        $expo->subscribe($interestDetails[0], $interestDetails[1]);
+        $message = 'Bonjour '.$interestDetails[0]."\n on vous enverra désormais \n une notification sur ce mobile \n à chaque récéption d'argent";
+        // Build the notification data
+        $notification = ['body' => $message];
+        
+        // Notify an interest with a notification
+        $expo->notify($interestDetails[0], $notification);
+        echo json_encode($_POST);
+      }catch(Exception $e){
+        echo(json_encode($e));
+      }
     }else{
       echo('tsis inin le POST ah');
     }

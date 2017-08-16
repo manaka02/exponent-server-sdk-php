@@ -10,7 +10,7 @@
             $notification = ['body' => $message];
             $expo->notify($name, $notification);
         } catch(Exception $e){
-            echo "la nom que vous avez mentionné n'existe pas encore dans le registre";
+            echo "la nom que vous avez mentionné n'existe pas encore dans le registre ou il a désactivé les notifications";
             var_dump($e);
         }
     }
