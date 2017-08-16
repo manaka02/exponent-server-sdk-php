@@ -11,8 +11,6 @@
             
             $notification = ['body' => $message];
             $expo->notify($name, $notification);
-            $listTokens = $expo->getMembers($name);
-            var_dump($listTokens);
         } catch(Exception $e){
             echo "la nom que vous avez mentionné n'existe pas encore dans le registre ou il a désactivé les notifications";
             var_dump($e);
