@@ -7,7 +7,7 @@
  * Time: 21:53
  */
 header("Access-Control-Allow-Origin: *");
-include_once '/SimpleRest.php';
+include_once '/SimpleRestHTTP.php';
 class InitUser extends SimpleRest {
 
     public function goInit($username, $token){
