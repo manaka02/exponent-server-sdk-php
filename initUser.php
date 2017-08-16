@@ -8,6 +8,11 @@
  */
 header("Access-Control-Allow-Origin: *");
 // include_once 'SimpleRestHTTP.php';
+
+function test($andrana){
+    var_dump('eto llez lait');
+}
+
 class InitUser{
 
     // public function goInit(){

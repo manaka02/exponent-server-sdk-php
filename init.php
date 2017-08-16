@@ -3,6 +3,7 @@
 
     var_dump('eto aza n ol tzitra kou');
      include_once 'InitUser.php';
+     test("Azerty");
       // $rest = new InitUser();
     // include_once '/initUser.php';
     // $rest = new initUser();
