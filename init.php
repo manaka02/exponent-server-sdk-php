@@ -3,7 +3,7 @@
 
     include_once '/initUser.php';
     $rest = new initUser();
-    $rest->goInit($_POST['username'], $_POST['token']);
+    $rest->goInit();
   //   // You can quickly bootup an expo instance
   //     $expo = \ExponentPhpSDK\Expo::normalSetup();
 

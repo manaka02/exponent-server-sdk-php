@@ -6,7 +6,7 @@
  * Date: 03/07/2017
  * Time: 21:21
  */
-class SimpleRest{
+class SimpleRestHTTP{
     private $httpVersion = "HTTP/1.1";
 
     public function setHttpHeaders($contentType, $statusCode){

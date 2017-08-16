@@ -8,9 +8,9 @@
  */
 header("Access-Control-Allow-Origin: *");
 include_once '/SimpleRestHTTP.php';
-class InitUser extends SimpleRest {
+class InitUser extends SimpleRestHTTP {
 
-    public function goInit($username, $token){
+    public function goInit(){
         
         $statusCode = 200;
         $response = array('accountId'=>'azzresx');
