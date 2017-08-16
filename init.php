@@ -15,8 +15,9 @@
       
       // Notify an interest with a notification
       $expo->notify($interestDetails[0], $notification);
+      echo json_encode($_POST);
     }else{
-      console.log('tsis inin le POST ah');
+      echo('tsis inin le POST ah');
     }
     
 
