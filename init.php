@@ -2,6 +2,7 @@
     header("Access-Control-Allow-Origin: *");
 
     if(isset($_POST)){
+      var_dump($_POST);
       require_once __DIR__.'/vendor/autoload.php';
       $interestDetails = ['toavina', 'ExponentPushToken[5AQ172ILixXkR3_9oM9uTh]'];
       
